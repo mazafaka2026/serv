@@ -9,9 +9,9 @@ def ClientTr():
         if not data:
             break
         else:
-            print "data"
+            print ("data")
             print(data)
-			print"s"
+			print ("s")
 			print (s)
             if data == "close":
                 conn.close()
