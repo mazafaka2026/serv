@@ -19,7 +19,7 @@ s.bind(('0.0.0.0', 2222))
 s.listen(10)
 while True:
 	conn, addr = s.accept()	
-	if s==1:
+	if True:
 		threading.Thread(target=ClientTr).start()
 	else:
 		s.listen(10)
