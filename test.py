@@ -25,6 +25,7 @@ class ClientTr (threading.Thread):
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(('0.0.0.0', 2222))
 s.listen(10)
+t1=ClientTr()
 # while True:
 	# conn, addr = s.accept()
 	# while True:
