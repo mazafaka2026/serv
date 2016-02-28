@@ -2,7 +2,7 @@ print "helo"
 import socket, threading
 
 def ClientTr():
-	 print "test 1"
+	print "test 1"
 	while True:
 		conn, addr = s.accept()
 		while True:
