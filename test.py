@@ -5,6 +5,7 @@ def ClientTr():
 	print "test 1"
 	while True:
 		data=conn.recv(1024)
+		print(data)
 		if not data:
 			break
 		else:
