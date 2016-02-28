@@ -18,7 +18,7 @@ s.bind(('0.0.0.0', 2222))
 s.listen(10)
 while True:
 	conn, addr = s.accept()	
-	for s srange (10):
+	for s xrange (10):
 	threading.Thread(target=ClientTr).start()
 #threading.Thread(target=ClientTr).start()
 #threading.Thread(target=ClientTr).start()
