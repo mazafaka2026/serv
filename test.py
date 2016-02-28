@@ -9,15 +9,15 @@ def ClientTr():
         if not data:
             break
         else:
-            print ("data")
-            print(data)
-			print ("s")
-			print (s)
-            if data == "close":
-                conn.close()
-            else:
-                conn.send(data)
-                conn.close()
+        	print ("data")
+        	print(data)
+		print ("s")
+		print (s)
+        	if data == "close":
+                	conn.close()
+        	else:
+                	conn.send(data)
+                	conn.close()
 
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
