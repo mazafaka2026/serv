@@ -1,31 +1,34 @@
 print "helo"
 import socket, threading
 
-class ClientTr (threading.Thread): 
-	def __init__(self, chanel, details):
-		self.chanel=chanel
-		self.details=details
-		threading.Thread.__init__(self)
-	def run(self):
+def ClientTr:
 	 print "test 1"
-	 for x in xrange(10):
+	while True:
+		conn, addr = s.accept()
 		while True:
-			conn, addr = s.accept()
-			while True:
-				data=conn.recv(1024)
-			if not data:
-				break
+			data=conn.recv(1024)
+		if not data:
+			break
+		else:
+			if data == "close":
+				conn.close()
 			else:
-				if data == "close":
-					conn.close()
-				else:
-					conn.send(data)
-		conn.close()
+				conn.send(data)
+	conn.close()
 		
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(('0.0.0.0', 2222))
 s.listen(10)
-t1=ClientTr()
+threading.Thread(targert=ClientTr).start()
+threading.Thread(targert=ClientTr).start()
+threading.Thread(targert=ClientTr).start()
+threading.Thread(targert=ClientTr).start()
+threading.Thread(targert=ClientTr).start()
+threading.Thread(targert=ClientTr).start()
+threading.Thread(targert=ClientTr).start()
+threading.Thread(targert=ClientTr).start()
+threading.Thread(targert=ClientTr).start()
+threading.Thread(targert=ClientTr).start()
 # while True:
 	# conn, addr = s.accept()
 	# while True:
