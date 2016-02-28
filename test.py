@@ -20,16 +20,17 @@ while True:
 	conn, addr = s.accept()	
 	x=s
 	for x in xrange (10):
-	threading.Thread(target=ClientTr).start()
-#threading.Thread(target=ClientTr).start()
-#threading.Thread(target=ClientTr).start()
-#threading.Thread(target=ClientTr).start()
-#threading.Thread(target=ClientTr).start()
-#threading.Thread(target=ClientTr).start()
-#threading.Thread(target=ClientTr).start()
-#threading.Thread(target=ClientTr).start()
-#threading.Thread(target=ClientTr).start()
-#threading.Thread(target=ClientTr).start()
+		break
+threading.Thread(target=ClientTr).start()
+threading.Thread(target=ClientTr).start()
+threading.Thread(target=ClientTr).start()
+threading.Thread(target=ClientTr).start()
+threading.Thread(target=ClientTr).start()
+threading.Thread(target=ClientTr).start()
+threading.Thread(target=ClientTr).start()
+threading.Thread(target=ClientTr).start()
+threading.Thread(target=ClientTr).start()
+threading.Thread(target=ClientTr).start()
 # while True:
 	# conn, addr = s.accept()
 	# while True:
