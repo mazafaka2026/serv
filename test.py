@@ -21,8 +21,6 @@ while True:
 	conn, addr = s.accept()	
 	if True:
 		threading.Thread(target=ClientTr).start()
-	else:
-		s.listen(10)
 #threading.Thread(target=ClientTr).start()
 #threading.Thread(target=ClientTr).start()
 #threading.Thread(target=ClientTr).start()
