@@ -1,17 +1,40 @@
-print "hello word"
-import socket
+print "helo"
+import socket, threading
+
+class ClientTr (threading.Thread): 
+	def __init__(self, chanel, details):
+		self.chanel=chanel
+		self.details=details
+		threading.Thread.__init__(self)
+	def run(self):
+	 print "test 1"
+	 for x in xrange(10):
+		while True:
+			conn, addr = s.accept()
+			while True:
+				data=conn.recv(1024)
+			if not data:
+				break
+			else:
+				if data == "close":
+					conn.close()
+				else:
+					conn.send(data)
+		conn.close()
+		
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind(("0.0.0.0", 2222))
-s.listen(5)
-while True:
-	conn, addr = s.accept()
-	if s.accept() is "close":
-	 conn.close()
-	else:
-	 while True:
-	 	data=conn.recv(1024)
-	 	if not data:
-		 break
-		conn.send(data)
-	 conn.close()
-	 mazafaka2026
+s.bind(('0.0.0.0', 2222))
+s.listen(10)
+# while True:
+	# conn, addr = s.accept()
+	# while True:
+	 	# data=conn.recv(1024)
+	 	# if not data:
+			# break
+		# else:
+			# if data == "close":
+				# conn.close()
+			# else:
+				# conn.send(data)
+# conn.close()
+
