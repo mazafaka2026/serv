@@ -28,7 +28,7 @@ s.bind(('0.0.0.0', 2222))
 s.listen(10)
 while True:
     conn, addr = s.accept()
-    if x in xrange(10):
+    if i in xrange(10):
         potok().start()
         # threading.Thread(target=ClientTr).start()
         # threading.Thread(target=ClientTr).start()
