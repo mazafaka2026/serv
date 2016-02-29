@@ -7,9 +7,9 @@ print ("s="+ str(s) )
 conn, addr = s.accept()
 print ("s=2="+ str(s) )
 while True:
-conn, addr = s.accept()
-print ("conn="+ str(conn) )
-print ("addr="+ str(addr) )
+  conn, addr = s.accept()
+  print ("conn="+ str(conn) )
+  print ("addr="+ str(addr) )
 #	while True:
 #	 	data=conn.recv(1024)
 #	 	if not data:
