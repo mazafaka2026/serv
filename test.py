@@ -29,7 +29,7 @@ s.listen(10)
 while True:
     conn, addr = s.accept()
     while True:
-        potok(target=ClientTr).start()
+        potok(target=potok.ClientTr).start()
         # threading.Thread(target=ClientTr).start()
         # threading.Thread(target=ClientTr).start()
         # threading.Thread(target=ClientTr).start()
