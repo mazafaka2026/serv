@@ -3,9 +3,9 @@ import socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(('0.0.0.0', 2222))
 s.listen(10)
-print ("s="+ str(s) )
-conn, addr = s.accept()
-print ("s=2="+ str(s) )
+#print ("s="+ str(s) )
+#conn, addr = s.accept()
+#print ("s=2="+ str(s) )
 while True:
   conn, addr = s.accept()
   print ("conn="+ str(conn) )
