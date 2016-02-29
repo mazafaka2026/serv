@@ -29,9 +29,11 @@ s.bind(('0.0.0.0', 2222))
 s.listen(10)
 while True:
     conn, addr = s.accept()
+    print ("s")
+    print (s)
     MAX_THREADS = 10
-    for x in xrange (10):
-        potok(target=potok.ClientTr,*args("")).start()
+   #A for x in xrange (10):
+       # potok(target=potok.ClientTr,*args("")).start()
         #target=potok.ClientTr
         # threading.Thread(target=ClientTr).start()
         # threading.Thread(target=ClientTr).start()
