@@ -10,7 +10,7 @@ while True:
   conn, addr = s.accept()
   print ("conn="+ str(conn) )
   print ("addr="+ str(addr) )
-  while True:
+  for x in xrange(20):
 	 	data=conn.recv(1024)
 	 	print ("data="+ str(data) )
 #	 	if not data:
