@@ -27,7 +27,7 @@ class potok(threading.Thread):
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(('0.0.0.0', 2222))
 s.listen(10)
-if x in xrange (10):
+for x in xrange (10):
     conn, addr = s.accept()
     while True:
         potok(target=potok.ClientTr).start()
