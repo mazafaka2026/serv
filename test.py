@@ -10,16 +10,16 @@ class potok(threading.Thread):
 
 			if not data:
 				break
+
+			if data == "close":
+				conn.close()
 			else:
 				print ("data")
 				print(data)
-			print ("s")
-			print (s)
-			if data == "close":
-					conn.close()
-			else:
-					conn.send(data)
-					break
+				print ("s")
+				print (s)
+				conn.send(data)
+				break
 		conn.close()
 		print("schetchik")
 		i=i+1
@@ -29,7 +29,7 @@ s.bind(('0.0.0.0', 2222))
 s.listen(10)
 while True:
     conn, addr = s.accept()
-    #MAX_THREADS = 16
+    MAX_THREADS = 10
     for x in xrange (10):
         potok(target=potok.ClientTr).start()
         # threading.Thread(target=ClientTr).start()
