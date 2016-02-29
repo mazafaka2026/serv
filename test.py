@@ -4,7 +4,7 @@ import socket, threading
 class potok(threading.Thread):
 	def run(self):
 		#self.s=s
-		print ("s+="+s)
+		print ("s+="+str(s))
 		print "test 1"
 		while True:
  			conn, addr = s.accept()
