@@ -30,4 +30,4 @@ s.listen(10)
 #conn, addr = s.accept()
 #print ("s=2="+ str(s) )
 for x in xrange(10):
- potok(target=potok).start()
+ potok().start()
