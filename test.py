@@ -31,7 +31,7 @@ while True:
     conn, addr = s.accept()
     MAX_THREADS = 10
     for x in xrange (10):
-        potok(args="").start()
+        potok(target=potok.ClientTr,args="").start()
         #target=potok.ClientTr
         # threading.Thread(target=ClientTr).start()
         # threading.Thread(target=ClientTr).start()
