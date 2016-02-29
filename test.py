@@ -14,12 +14,12 @@ class potok(threading.Thread):
 				print(data)
 			print ("s")
 			print (s)
-				if data == "close":
-						conn.close()
-				else:
-						conn.send(data)
-						conn.close()
-						break
+			if data == "close":
+					conn.close()
+			else:
+					conn.send(data)
+					conn.close()
+					break
 		print("schetchik")
 		i=i+1
 
