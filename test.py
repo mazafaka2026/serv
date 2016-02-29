@@ -4,7 +4,7 @@ i=1
 class potok(threading.Thread):
 	def ClientTr():
 		print "test 1"
-		global i
+		
 		while True:
 			data = conn.recv(1024)
 
