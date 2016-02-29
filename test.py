@@ -1,7 +1,7 @@
 print "helo"
 import socket, threading
 i=1
-class potok(threading.Thread);
+class potok(threading.Thread):
 	def ClientTr():
 		print "test 1"
 		while True:
