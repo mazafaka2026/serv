@@ -2,7 +2,7 @@ print "helo"
 import socket, threading
 
 class potok(threading.Thread):
-	def run():
+	def run(s):
 		print "test 1"
 		while True:
  			conn, addr = s.accept()
@@ -30,4 +30,4 @@ s.listen(10)
 #conn, addr = s.accept()
 #print ("s=2="+ str(s) )
 for x in xrange(10):
- potok(target=potok).start(*s)
+ potok(target=potok).start()
