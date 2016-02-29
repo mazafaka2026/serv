@@ -3,6 +3,7 @@ import socket, threading
 
 class potok(threading.Thread):
 	def run(self,s):
+		self.s=s
 		print "test 1"
 		while True:
  			conn, addr = s.accept()
