@@ -18,8 +18,8 @@ class potok(threading.Thread):
 					conn.close()
 			else:
 					conn.send(data)
-					conn.close()
 					break
+		conn.close()
 		print("schetchik")
 		i=i+1
 
