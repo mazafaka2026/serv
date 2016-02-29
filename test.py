@@ -13,11 +13,14 @@ while True:
   for x in xrange(20):
 	 	data=conn.recv(1024)
 	 	print ("data="+ str(data) )
-#	 	if not data:
-#			break
-#		else:
-#			if data == "close":
-#				conn.close()
-#			else:
-#				conn.send(data)
+	 	if not data:
+	 		print ("data not="+ str(data) )
+			break
+		else:
+			if data == "close":
+				print ("data close="+ str(data) )
+				conn.close()
+			else:
+				print ("data else="+ str(data) )
+				conn.send(data)
 conn.close()
