@@ -2,8 +2,8 @@ print "helo"
 import socket, threading
 
 class potok(threading.Thread):
-	def run(self,s):
-		self.s=s
+	def run(self):
+		#self.s=s
 		print ("s+="+s)
 		print "test 1"
 		while True:
