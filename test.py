@@ -1,5 +1,5 @@
 print "helo"
-import socket
+import socket, threading
 
 class potok(threading.Thread):
 	def ClientTr():
